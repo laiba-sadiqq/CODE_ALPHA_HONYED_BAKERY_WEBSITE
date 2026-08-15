@@ -592,8 +592,29 @@
       }
       
       .classic-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .product-card {
+        border-radius: 12px;
+      }
+
+      .product-card img.h-48 {
+        height: 8rem !important;
+      }
+
+      .product-card .p-5 {
+        padding: 10px !important;
+      }
+
+      .product-card h3 {
+        font-size: 0.85rem !important;
+      }
+
+      .product-card .add-to-cart {
+        font-size: 0.75rem;
+        padding: 6px 10px;
       }
     }
 

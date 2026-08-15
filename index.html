@@ -134,6 +134,28 @@
                 gap: 15px !important;
                 padding: 0 10px !important;
             }
+
+            /* Menu: hide desktop grid, show carousel */
+            .menu-items { display: none !important; }
+            .mobile-carousel { display: block !important; }
+
+            /* Featured products: horizontal scroll carousel on mobile */
+            .featured-carousel-wrapper > .grid {
+                display: flex !important;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                gap: 16px;
+                padding: 0 8px 16px;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+            .featured-carousel-wrapper > .grid::-webkit-scrollbar { display: none; }
+            .featured-carousel-wrapper > .grid > * {
+                flex: 0 0 78vw !important;
+                max-width: 300px;
+                scroll-snap-align: center;
+            }
         }
         
         /* Mobile nav icons container */
@@ -1091,6 +1113,7 @@
             <div class="w-24 h-1 bg-gradient-to-r from-[#ff9eb5] to-[#8acaf5] mx-auto rounded-full"></div>
         </div>
 
+        <div class="featured-carousel-wrapper">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Featured Product 1 -->
             <div class="group relative">
@@ -1319,6 +1342,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <!-- View All Button -->
