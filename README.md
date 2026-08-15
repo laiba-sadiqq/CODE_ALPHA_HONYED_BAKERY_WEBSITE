@@ -48,7 +48,7 @@ Honeyed Bakery is a modern and responsive bakery website developed as part of my
 <img width="439" height="311" alt="image" src="https://github.com/user-attachments/assets/6b6992d9-4f21-470b-8a42-d668b2ca91c8" />
 
 
-<img width="836" height="435" alt="image" src="https://github.com/user-attachments/assets/2a4813f4-d310-4d03-879c-accf4678253c" />
+
 
 ---
 
