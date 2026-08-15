@@ -395,39 +395,49 @@
 
         /* Responsive design */
         @media (max-width: 768px) {
+            body {
+                padding: 15px 12px;
+                align-items: center;
+            }
+
             .container {
                 flex-direction: column;
-                max-width: 500px;
+                max-width: 440px;
+                min-height: auto;
+                border-radius: 20px;
             }
             
+            /* Hide the decorative left welcome banner on mobile so only the clean form is visible */
             .left-panel {
-                padding: 30px;
+                display: none !important;
             }
             
             .right-panel {
-                padding: 30px;
+                padding: 28px 20px;
             }
             
             .bg-decoration {
                 display: none;
             }
+
+            .logo h1 {
+                font-size: 38px;
+            }
         }
 
         @media (max-width: 480px) {
-            .container {
-                border-radius: 20px;
+            .right-panel {
+                padding: 24px 16px;
             }
             
-            .left-panel, .right-panel {
-                padding: 25px 20px;
+            .form-group input {
+                padding: 14px 16px;
+                font-size: 15px;
             }
             
-            .logo h1 {
-                font-size: 36px;
-            }
-            
-            .welcome-text h1 {
-                font-size: 36px;
+            .btn {
+                padding: 14px;
+                font-size: 15px;
             }
         }
     </style>
